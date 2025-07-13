@@ -16,7 +16,7 @@ export default function HowToApplyPage() {
           <h1 className="text-4xl font-bold text-white mb-6">How to Get Started</h1>
           <p className="text-xl text-white mb-8 opacity-90">
             If you are {siteConfig.eligibility.ageRange}, have a mental health or developmental concern, and are
-            interested in joining Townsend Medical Services, please fill out the 'prospective patient' form.
+            interested in joining Townsend Medical Services, please fill out the &apos;prospective patient&apos; form.
           </p>
           <Button
             size="lg"
@@ -49,7 +49,7 @@ export default function HowToApplyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Complete the prospective patient application form. We'll review your information and contact you
+                    Complete the prospective patient application form. We&apos;ll review your information and contact you
                     about next steps.
                   </p>
                   <ul className="text-sm text-gray-500 space-y-1">
@@ -69,7 +69,7 @@ export default function HowToApplyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    After hearing back from you, we'll fill out insurance information on Headway. Look for directions on
+                    After hearing back from you, we&apos;ll fill out insurance information on Headway. Look for directions on
                     how to enroll in our user-friendly MYO App.
                   </p>
                   <Button className="w-full bg-emerald-300 hover:bg-emerald-400 text-white mt-4" asChild>
@@ -93,7 +93,7 @@ export default function HowToApplyPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    After hearing back from you, we'll receive directions on how to use the user-friendly MYO App for
+                    After hearing back from you, we&apos;ll receive directions on how to use the user-friendly MYO App for
                     scheduling and payments.
                   </p>
                 </CardContent>
