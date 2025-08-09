@@ -60,8 +60,8 @@ export default function ServicesPage() {
                                     className="hover:shadow-lg transition-shadow cursor-pointer"
                                 >
                                     <CardContent className="p-6">
-                                        <div className="aspect-video bg-emerald-100 rounded-lg mb-4 flex items-center justify-center">
-                                            <IconComponent className="w-12 h-12 text-emerald-300" />
+                                        <div className="aspect-video bg-pink-100 rounded-lg mb-4 flex items-center justify-center">
+                                            <IconComponent className="w-12 h-12 text-pink-300" />
                                         </div>
                                         <h3 className="text-xl font-semibold text-gray-900 mb-3">
                                             {service.title}
@@ -86,7 +86,7 @@ export default function ServicesPage() {
                                         </div>
 
                                         <Button
-                                            className="w-full bg-emerald-300 hover:bg-emerald-400 text-white"
+                                            className="w-full bg-pink-300 hover:bg-pink-400 text-white"
                                             onClick={() => openModal(index)}
                                         >
                                             More Info
@@ -220,7 +220,7 @@ export default function ServicesPage() {
                             <div className="mt-8 pt-6 border-t border-gray-200 text-center">
                                 <Button
                                     onClick={closeModal}
-                                    className="bg-emerald-300 hover:bg-emerald-400 text-white px-8"
+                                    className="bg-pink-300 hover:bg-pink-400 text-white px-8"
                                 >
                                     Close
                                 </Button>
