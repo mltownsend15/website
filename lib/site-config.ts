@@ -145,6 +145,9 @@ export const siteConfig = {
         "Premera Blue Cross",
         "Oscar Health",
         "Blue Cross Blue Shield of Massachusetts",
+        "Aetna",
+        "Assuris",
+        "Molina",
     ],
 
     // Certifications
