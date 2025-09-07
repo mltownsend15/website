@@ -21,7 +21,7 @@ export const siteConfig = {
     contact: {
         phone: "(509) 606-0708",
         fax: "(509) 606-1514",
-        email: "Townsendmedicalservices@yahoo.com",
+        email: "admin@townsendmedicalservices.com",
         address: "25 West Main C1",
         city: "Spokane, WA 99201",
         hours: [
