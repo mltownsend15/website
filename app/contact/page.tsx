@@ -179,33 +179,12 @@ export default function ContactPage() {
                                                 htmlFor="sms-consent"
                                                 className="text-gray-700 leading-relaxed text-sm"
                                             >
-                                                I authorize my provider to
-                                                communicate with me via SMS/text
-                                                message and understand that this
-                                                form of communication may not be
-                                                fully secure.
-                                            </label>
-                                        </div>
-
-                                        {/* Treatment Consent Checkbox */}
-                                        <div className="flex items-start space-x-3">
-                                            <input
-                                                type="checkbox"
-                                                id="treatment-consent"
-                                                checked={treatmentConsent}
-                                                onChange={(e) =>
-                                                    setTreatmentConsent(
-                                                        e.target.checked
-                                                    )
-                                                }
-                                                className="mt-1 h-4 w-4 text-emerald-300 focus:ring-emerald-300 border-gray-300 rounded"
-                                            />
-                                            <label
-                                                htmlFor="treatment-consent"
-                                                className="text-gray-700 leading-relaxed text-sm"
-                                            >
-                                                I consent to treatment with
-                                                Miranda.
+                                                I authorize Townsend Medical
+                                                Services PLLC to communicate
+                                                with me via SMS/texting and
+                                                understand that this form of
+                                                communication may not be fully
+                                                secure.
                                             </label>
                                         </div>
                                     </div>
