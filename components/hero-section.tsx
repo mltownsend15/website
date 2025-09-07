@@ -19,7 +19,7 @@ export function HeroSection() {
                     </h1>
 
                     {/* Subtitle with better contrast */}
-                    <div className="bg-black bg-opacity-30 rounded-lg p-6 mb-8 backdrop-blur-sm">
+                    <div className="bg-black/5 rounded-lg p-6 mb-8 backdrop-blur-sm shadow-xl">
                         <p className="text-xl md:text-2xl text-white font-medium leading-relaxed">
                             Virtual psychiatric care for youth ages{" "}
                             {siteConfig.eligibility.ageRange} specializing in

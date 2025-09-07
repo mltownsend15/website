@@ -45,82 +45,38 @@ export default function HowToApplyPage() {
                         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
                             Application Process
                         </h2>
-                        <div className="grid md:grid-cols-3 gap-8">
-                            <Card>
-                                <CardHeader>
-                                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                                        <Users className="w-6 h-6 text-emerald-300" />
-                                    </div>
-                                    <CardTitle className="text-xl">
-                                        Step 1: New Clients
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600 mb-4">
-                                        Complete the prospective patient
-                                        application form. We&apos;ll review your
-                                        information and contact you about next
-                                        steps.
-                                    </p>
-                                    <ul className="text-sm text-gray-500 space-y-1">
-                                        <li>• Fill out intake forms</li>
-                                        <li>• Provide insurance information</li>
-                                        <li>• Schedule initial consultation</li>
-                                    </ul>
-                                </CardContent>
-                            </Card>
+                    </div>
 
-                            <Card>
-                                <CardHeader>
-                                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                                        <FileText className="w-6 h-6 text-emerald-300" />
+                    {/* New Patients Card */}
+                    <Card className="mb-12">
+                        <CardContent className="p-8">
+                            <div className="md:flex items-center">
+                                <div className="md:w-1/3 mb-6 md:mb-0">
+                                    <div className="w-32 h-32 bg-emerald-100 rounded-full flex items-center justify-center mx-auto">
+                                        <Users className="w-16 h-16 text-emerald-300" />
                                     </div>
-                                    <CardTitle className="text-xl">
-                                        Step 2: Insured Clients
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600 mb-4">
-                                        After hearing back from you, we&apos;ll
-                                        fill out insurance information on
-                                        Headway. Look for directions on how to
-                                        enroll in our user-friendly MYO App.
-                                    </p>
-                                    <Button
-                                        className="w-full bg-emerald-300 hover:bg-emerald-400 text-white mt-4"
-                                        asChild
-                                    >
+                                </div>
+                                <div className="md:w-2/3 md:pl-8">
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                                        New Clients
+                                    </h3>
+                                    <p className="text-gray-600 leading-relaxed">
+                                        Simply complete the{" "}
                                         <a
-                                            href="https://care.headway.co/providers/miranda-townsend?utm_source=pem&utm_medium=direct_link&utm_campaign=101187"
+                                            href="https://www.valant.io/prospectivepatient/TownsendMedicalServicesPLLC"
+                                            className="text-emerald-300"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            Book with Headway
-                                        </a>
-                                    </Button>
-                                </CardContent>
-                            </Card>
-
-                            <Card>
-                                <CardHeader>
-                                    <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                                        <CreditCard className="w-6 h-6 text-emerald-300" />
-                                    </div>
-                                    <CardTitle className="text-xl">
-                                        Step 3: Cash Pay Clients
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-gray-600 mb-4">
-                                        After hearing back from you, we will
-                                        receive directions on how to use the
-                                        user-friendly MYO App for scheduling and
-                                        payments.
+                                            Apply Here
+                                        </a>{" "}
+                                        form and we will review your information
+                                        and contact you about next steps.
                                     </p>
-                                </CardContent>
-                            </Card>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
 
                     {/* What is Medication Management */}
                     <Card className="mb-12">
