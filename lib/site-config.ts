@@ -86,8 +86,7 @@ export const siteConfig = {
             title: "Medication Management with Counseling",
             subtitle:
                 "Youth centered psychiatric medication management and counseling",
-            description:
-                "Youth-centered psychiatric medication management combined with therapeutic counseling support.",
+            description: "Youth-centered psychiatric medication management.",
             duration: "30 min",
             price: "150",
             type: "Virtual",
