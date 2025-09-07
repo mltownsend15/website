@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { siteConfig } from "@/lib/site-config";
+import { InsuranceList } from "@/components/insurance-list";
 import { Brain, Pill, Puzzle, Clock, DollarSign, MapPin } from "lucide-react";
 import Link from "next/link";
 
@@ -71,24 +72,8 @@ export function ServicesSection() {
                     })}
                 </div>
 
-                {/* Insurance Section */}
-                <div className="bg-white rounded-lg p-8 shadow-sm">
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
-                        We Accept These In-Network Insurances
-                    </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                        {siteConfig.insurance.map((insurer, index) => (
-                            <div
-                                key={index}
-                                className="p-3 bg-gray-50 rounded-lg"
-                            >
-                                <span className="text-sm font-medium text-gray-700">
-                                    {insurer}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                {/* Insurance Section (Reusable) */}
+                <InsuranceList title="Accepted Insurances" />
             </div>
         </section>
     );

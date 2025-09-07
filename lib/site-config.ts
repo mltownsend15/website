@@ -31,6 +31,7 @@ export const siteConfig = {
         ],
         note: "Virtual appointments only",
         bookingNote: "Please see texting policy for booking",
+        licenseNumber: "AP60494711",
     },
 
     // Practitioner Information

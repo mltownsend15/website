@@ -52,6 +52,12 @@ export function Navigation() {
                                 Services
                             </Link>
                             <Link
+                                href="/referrals"
+                                className="text-gray-900 hover:text-emerald-300 px-2 xl:px-3 py-2 text-sm font-medium whitespace-nowrap"
+                            >
+                                Referrals
+                            </Link>
+                            <Link
                                 href="/contact"
                                 className="text-gray-900 hover:text-emerald-300 px-2 xl:px-3 py-2 text-sm font-medium whitespace-nowrap"
                             >
@@ -123,6 +129,13 @@ export function Navigation() {
                                 onClick={() => setIsOpen(false)}
                             >
                                 Services
+                            </Link>
+                            <Link
+                                href="/referrals"
+                                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-emerald-300 hover:bg-gray-50 rounded-md"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Referrals
                             </Link>
                             <Link
                                 href="/contact"
