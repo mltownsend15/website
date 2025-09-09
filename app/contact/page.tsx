@@ -18,7 +18,6 @@ import { useState } from "react";
 
 export default function ContactPage() {
     const [smsConsent, setSmsConsent] = useState(false);
-    const [treatmentConsent, setTreatmentConsent] = useState(false);
 
     return (
         <div className="min-h-screen">

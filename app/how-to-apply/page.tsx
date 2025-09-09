@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer";
 import { siteConfig } from "@/lib/site-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { XCircle, Users, CreditCard, FileText, Pill } from "lucide-react";
+import { XCircle, Users, Pill } from "lucide-react";
 
 export default function HowToApplyPage() {
     return (
