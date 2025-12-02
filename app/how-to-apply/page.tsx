@@ -28,7 +28,7 @@ export default function HowToApplyPage() {
                         asChild
                     >
                         <a
-                            href="https://www.valant.io/prospectivepatient/TownsendMedicalServicesPLLC"
+                            href="https://miranda-townsend.clientsecure.me/contact-widget"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -63,7 +63,7 @@ export default function HowToApplyPage() {
                                     <p className="text-gray-600 leading-relaxed">
                                         Simply complete the{" "}
                                         <a
-                                            href="https://www.valant.io/prospectivepatient/TownsendMedicalServicesPLLC"
+                                            href="https://miranda-townsend.clientsecure.me/contact-widget"
                                             className="text-emerald-300"
                                             target="_blank"
                                             rel="noopener noreferrer"

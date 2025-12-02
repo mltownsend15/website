@@ -35,7 +35,7 @@ export function HeroSection() {
                             asChild
                         >
                             <a
-                                href="https://www.valant.io/prospectivepatient/TownsendMedicalServicesPLLC"
+                                href="https://miranda-townsend.clientsecure.me/contact-widget"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
