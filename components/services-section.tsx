@@ -24,7 +24,7 @@ export function ServicesSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-col-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-col-1 md:grid-cols-3 gap-8 mb-6">
                     {siteConfig.services.map((service, index) => {
                         const IconComponent =
                             iconMap[service.icon as keyof typeof iconMap];
@@ -71,9 +71,9 @@ export function ServicesSection() {
                         );
                     })}
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center mb-12">
                     <Link href="/services">
-                        <button className="bg-pink-300 hover:bg-pink-400 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer">
+                        <button className="bg-pink-300 hover:bg-pink-400 text-white px-6 py-4 rounded-md font-medium transition-colors cursor-pointer">
                             More About Our Services 
                         </button>
                     </Link>

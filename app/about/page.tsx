@@ -31,8 +31,8 @@ export default function AboutPage() {
                                             <Image
                                                 src="/mirandaBiographyPicture.jpg"
                                                 alt="Miranda Townsend, Psychiatric Nurse Practitioner"
-                                                width={128}
-                                                height={128}
+                                                width={256}
+                                                height={256}
                                                 className="w-full h-full object-cover object-top"
                                             />
                                         </article>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                                                 <Badge
                                                     key={index}
                                                     variant="secondary"
-                                                    className="bg-emerald-100 text-emerald-400"
+                                                    className="bg-emerald-100 text-emerald-600"
                                                 >
                                                     {specialty}
                                                 </Badge>
