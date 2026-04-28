@@ -25,16 +25,13 @@ export function InsuranceList({
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4 text-center">
                 {siteConfig.insurance.map((insurer, index) => {
-                    let label = insurer;
-                    if (highlightMolinaNote) {
-                        if (insurer.toLowerCase().startsWith("molina")) {
-                            label = "Molina - Autism Evaluations only";
-                        }
-                        if (insurer.toLowerCase() === "assuris") {
-                            // normalize spelling if needed
-                            label = "Asuris"; // Display friendly name
-                        }
-                    }
+                    const label = highlightMolinaNote
+                        ? insurer.toLowerCase().startsWith("molina")
+                            ? "Molina - Autism Evaluations only"
+                            : insurer.toLowerCase() === "assuris"
+                                ? "Asuris"
+                                : insurer
+                        : insurer;
                     return (
                         <div key={index} className={itemClassName}>
                             <span className="text-sm font-medium text-gray-800">
@@ -51,7 +48,7 @@ export function InsuranceList({
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
                 {siteConfig.add_insurance.map((insurer, index) => {
-                    let label = insurer;
+                    const label = insurer;
                     return (
                         <div key={index} className={itemClassName}>
                             <span className="text-sm font-medium text-gray-800">

@@ -1,15 +1,9 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { siteConfig } from "@/lib/site-config";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { InsuranceList } from "@/components/insurance-list";
 
 export default function ReferralsPage() {
-    // Placeholder values to be filled in later
-    const WA_LICENSE_NUMBER = siteConfig.contact.licenseNumber; // Replace with actual license number
-    const FAX_NUMBER = siteConfig.contact.fax; // Uses existing fax if present
-
     return (
         <div className="min-h-screen">
             <Navigation />

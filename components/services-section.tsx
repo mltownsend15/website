@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { siteConfig } from "@/lib/site-config";
 import { InsuranceList } from "@/components/insurance-list";
-import { Brain, Pill, Puzzle, Clock, DollarSign, MapPin, Info } from "lucide-react";
+import { Brain, Pill, Puzzle, Clock, DollarSign, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const iconMap = {
