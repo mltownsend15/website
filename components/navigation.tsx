@@ -83,7 +83,7 @@ export function Navigation() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Apply Here
+                                Get Started
                             </a>
                         </Button>
                     </div>
@@ -161,7 +161,7 @@ export function Navigation() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Apply Here
+                                        Get Started
                                     </a>
                                 </Button>
                             </div>

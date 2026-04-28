@@ -1,9 +1,9 @@
 export const siteConfig = {
     name: "Townsend Medical Services",
     tagline:
-        "Inclusive, compassionate, and professional care prioritized through your mental health treatment.",
+        "Elevating the Mental Health of People in WA through Inclusive Virtual Psychiatric Care",
     description:
-        "Virtual psychiatric care founded by Miranda Townsend, a psychiatric nurse practitioner with a decade of experience in Washington State",
+        "Psychiatric care founded by Miranda Townsend, a psychiatric nurse practitioner with a decade of experience in Washington State",
 
     // Color Palette - Emerald Forest Theme
     colors: {
@@ -25,13 +25,16 @@ export const siteConfig = {
         address: "25 West Main C1",
         city: "Spokane, WA 99201",
         hours: [
-            "Tuesday: 8 AM - 11 AM",
+            "Monday: 8 AM - 4 PM",
+            "Tuesday: 8 AM - 4 PM",
             "Wednesday: 8 AM - 4 PM",
             "Thursday: 8 AM - 4 PM",
+            "Friday: 8 AM - 4 PM",
         ],
         note: "Virtual appointments only",
         bookingNote: "Please see texting policy for booking",
         licenseNumber: "AP60494711",
+        npi: "1568851509"
     },
 
     // Practitioner Information
@@ -39,15 +42,12 @@ export const siteConfig = {
         name: "Miranda Townsend",
         title: "Psychiatric Nurse Practitioner",
         credentials: "MN, ARNP, PMHNP-BC",
-        bio: "Meet Miranda, a Spokane native with a passion for treating children, adolescents, and young adults with mental health challenges. Miranda earned her Master's degree from Washington State University. She combines her professional expertise with her love of creativity through drawing, painting, and sewing. Miranda shares her home with her husband and their three cavapoos, who resemble teddy bears. Married and rooted in Spokane, she embraces both her personal and professional life with dedication.",
+        bio: "Miranda Townsend, MN, ARNP, PMHNP-BC graduated with her Master’s degree as an ARNP in 2014 from Washington State University. She has over a decade of experience working with people across the life span, Medicaid systems, and developing and supporting mental health programs both residentially and in outpatient settings. She is a compassionate inclusive provider and highlights the strengths of the people she works with.",
         specialties: [
             "Autism Spectrum Disorders",
-            "Post-Traumatic Stress Disorder (PTSD)",
             "Anxiety Disorders",
-            "Obsessive Compulsive Disorder (OCD)",
-            "Mood Disorders - Bipolar and Depression",
-            "Attention-Deficit/Hyperactivity Disorder (ADHD)",
-            "LGBTQIA+ community support",
+            "Mood Disorders",
+            "Attention-Deficit/Hyperactivity Disorder (ADHD)"
         ],
         approach:
             "The power of resilience and the potential for growth is seen in every individual. Ideal clients are those who are willing to explore their experiences and symptoms from a biopsychosocial developmental perspective. Together, we'll aim to uncover the understanding of your challenges and work toward effective, personalized solutions.",
@@ -62,6 +62,7 @@ export const siteConfig = {
         {
             title: "Psychiatric Assessment",
             subtitle: "Diagnostic Evaluation",
+            info: "With or without Treatment Recommendations",
             description:
                 "Comprehensive diagnostic evaluation to understand your mental health and find the best path for treatment.",
             duration: "1 hr",
@@ -84,9 +85,10 @@ export const siteConfig = {
             },
         },
         {
-            title: "Medication Management with Counseling",
+            title: "Psychiatric Medication Management",
             subtitle:
                 "Youth centered psychiatric medication management and counseling",
+            info: "With or without therapy",
             description: "Youth-centered psychiatric medication management.",
             duration: "30 min",
             price: "150",
@@ -106,7 +108,7 @@ export const siteConfig = {
             },
         },
         {
-            title: "Autism Evaluation",
+            title: "COE Autism Evaluations and Recommendations",
             subtitle: "COE evaluation for autism spectrum disorder",
             description:
                 "COE evaluation for autism spectrum disorder using specialized assessment tools and comprehensive evaluation.",
@@ -138,17 +140,22 @@ export const siteConfig = {
 
     // Insurance
     insurance: [
-        "BlueShield of Washington",
-        "Oxford",
-        "Ambetter Washington",
-        "United Healthcare",
-        "Cigna",
-        "Premera Blue Cross",
-        "Oscar Health",
-        "Blue Cross Blue Shield of Massachusetts",
         "Aetna",
+        "Ambetter Washington",
         "Assuris",
-        "Molina",
+        "BlueShield of Washington",
+        "Employee Benefit Management Services Inc",
+        "Premera Blue Cross",
+        "Regence",
+        "United Healthcare",
+        "United Medical Resources",
+    ],
+
+    //ADD Insurance
+    add_insurance: [
+        "Community Health Plan of WA",
+        "Coordinated Care",
+        "Molina"
     ],
 
     // Certifications

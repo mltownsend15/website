@@ -32,7 +32,7 @@ export default function HowToApplyPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Apply Here
+                            Get Started
                         </a>
                     </Button>
                 </div>
@@ -68,7 +68,7 @@ export default function HowToApplyPage() {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            Apply Here
+                                            Get Started
                                         </a>{" "}
                                         form and we will review your information
                                         and contact you about next steps.

@@ -33,7 +33,7 @@ export default function ReferralsPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Apply Here
+                            Get Started
                         </a>
                     </Button>
                 </div>

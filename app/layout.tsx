@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
     title: "Townsend Medical Services",
     description:
-        "Inclusive, compassionate, and professional care prioritized through your mental health treatment",
+        "Elevating the Mental Health of People in WA through Inclusive Virtual Psychiatric Care",
     icons: {
         icon: "/favicon.ico",
     },
