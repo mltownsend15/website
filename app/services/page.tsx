@@ -50,7 +50,7 @@ export default function ServicesPage() {
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 gap-8">
                         {siteConfig.services.map((service, index) => {
                             const IconComponent =
                                 iconMap[service.icon as keyof typeof iconMap];
@@ -59,38 +59,47 @@ export default function ServicesPage() {
                                     key={index}
                                     className="hover:shadow-lg transition-shadow cursor-pointer"
                                 >
-                                    <CardContent className="p-6">
-                                        <div className="aspect-video bg-pink-100 rounded-lg mb-4 flex items-center justify-center">
+                                    <CardContent className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-3 grid-flow-col gap-8 p-6 relative">
+                                        <div className="md:col-span-2 grid">
+                                            <div className="flex flex-col">
+                                                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                                    {service.title}
+                                                </h3>
+                                                <div className="text-l font-semibold pb-2 text-gray-900">
+                                                    <span>
+                                                        {service.info}
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                                                {service.description}
+                                            </p>
+                                            <div className="flex justify-center md:absolute top-0 right-6">
+                                                <div className="flex justify-between items-center text-sm text-gray-500 gap-2 mb-4">
+                                                    <div className="flex items-center">
+                                                        <Clock className="w-4 h-4 mr-1" />
+                                                        {service.duration}
+                                                    </div>
+                                                    <div className="flex items-center">
+                                                        <DollarSign className="w-4 h-4 mr-1" />
+                                                        {service.price}
+                                                    </div>
+                                                    <div className="flex items-center">
+                                                        <MapPin className="w-4 h-4 mr-1" />
+                                                        {service.type}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <Button
+                                                className="w-full bg-pink-300 hover:bg-pink-400 text-white"
+                                                onClick={() => openModal(index)}
+                                            >
+                                                More Info
+                                            </Button>
+                                        </div>
+                                        <div className="col-start-1 md:row-start-1 aspect-video bg-pink-100 rounded-lg mb-4 flex items-center justify-center">
                                             <IconComponent className="w-12 h-12 text-pink-300" />
                                         </div>
-                                        <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                                            {service.title}
-                                        </h3>
-                                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                            {service.description}
-                                        </p>
-
-                                        <div className="flex justify-between items-center text-sm text-gray-500 mb-4">
-                                            <div className="flex items-center">
-                                                <Clock className="w-4 h-4 mr-1" />
-                                                {service.duration}
-                                            </div>
-                                            <div className="flex items-center">
-                                                <DollarSign className="w-4 h-4 mr-1" />
-                                                {service.price}
-                                            </div>
-                                            <div className="flex items-center">
-                                                <MapPin className="w-4 h-4 mr-1" />
-                                                {service.type}
-                                            </div>
-                                        </div>
-
-                                        <Button
-                                            className="w-full bg-pink-300 hover:bg-pink-400 text-white"
-                                            onClick={() => openModal(index)}
-                                        >
-                                            More Info
-                                        </Button>
                                     </CardContent>
                                 </Card>
                             );
