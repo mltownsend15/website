@@ -46,10 +46,11 @@ export function HeroSection() {
                 </div>
             </div>
 
+            <div className="absolute bottom-0 left-0 right-0 h-full -z-1 bg-center bg-cover bg-no-repeat" style={{backgroundImage: "url(/clouds.avif)"}}></div>
             {/* Bottom gradient fade */}
             <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent"></div>
-            <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-gray-50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-gray-50 to-transparent"></div>
+            
         </div>
     );
 }
