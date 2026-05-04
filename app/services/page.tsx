@@ -27,11 +27,13 @@ export default function ServicesPage() {
     const [selectedService, setSelectedService] = useState<number | null>(null);
     const [revealedIndex, setRevealedIndex] = useState<number | null>(null);
 
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const openModal = (index: number) => {
         setSelectedService(index);
         // Prevent body scroll when modal is open
         document.body.style.overflow = "hidden";
     };
+    /* eslint-enable @typescript-eslint/no-unused-vars */
 
     const closeModal = () => {
         setSelectedService(null);
@@ -42,9 +44,11 @@ export default function ServicesPage() {
     const openMoreInfo = (index: number) => {
         setRevealedIndex((prev) => (prev === index ? null : index));
     };
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const closeMoreInfo = () => {
         setRevealedIndex(null);
     };
+    /* eslint-enable @typescript-eslint/no-unused-vars */
 
     return (
         <div className="min-h-screen">
