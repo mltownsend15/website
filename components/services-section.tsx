@@ -49,16 +49,16 @@ export function ServicesSection() {
                                         {service.descriptionShort}
                                     </p>
 
-                                    <div className="row-start-14 row-span-4 flex justify-center items-center space-x-4 text-sm text-gray-600 bg-pink-50 rounded-sm">
-                                        <div className="flex items-center">
+                                    <div className="row-start-14 row-span-4 grid grid-flow-col gap-2 px-2 space-x-4 text-sm text-gray-600 bg-pink-50 rounded-sm">
+                                        <div className="flex items-center justify-center">
                                             <Clock className="w-4 h-4 mr-1" />
                                             {service.duration}
                                         </div>
-                                        <div className="flex items-center">
+                                        <div className="flex items-center justify-center">
                                             <DollarSign className="w-4 h-4 mr-1" />
                                             {service.price}
                                         </div>
-                                        <div className="flex items-center">
+                                        <div className="flex items-center justify-center">
                                             <MapPin className="w-4 h-4 mr-1" />
                                             {service.type}
                                         </div>

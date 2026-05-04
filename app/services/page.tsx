@@ -25,6 +25,7 @@ const iconMap = {
 
 export default function ServicesPage() {
     const [selectedService, setSelectedService] = useState<number | null>(null);
+    const [revealedIndex, setRevealedIndex] = useState<number | null>(null);
 
     const openModal = (index: number) => {
         setSelectedService(index);
@@ -38,13 +39,12 @@ export default function ServicesPage() {
         document.body.style.overflow = "unset";
     };
 
-    const openMoreInfo = () => {
-
-    }
-
+    const openMoreInfo = (index: number) => {
+        setRevealedIndex((prev) => (prev === index ? null : index));
+    };
     const closeMoreInfo = () => {
-        
-    }
+        setRevealedIndex(null);
+    };
 
     return (
         <div className="min-h-screen">
@@ -100,12 +100,21 @@ export default function ServicesPage() {
                                                 </div>
                                             </div>
                                             <a
-                                                className="flex items-center w-full text-pink-300 hover:text-pink-400 font-bold gap-2"
-                                                onClick={() => openModal(index)}
+                                                className="flex items-center w-full text-pink-300 hover:text-pink-400 font-bold gap-2 cursor-pointer"
+                                                onClick={() => openMoreInfo(index)}
                                             >
-                                                More Info
-                                                <ChevronDown className="w-4 h-4" />
+                                                {revealedIndex === index ? "Less Info" : "More Info"}
+                                                <ChevronDown
+                                                    className={`w-4 h-4 transition-transform duration-200 ${
+                                                        revealedIndex === index ? "rotate-180" : ""
+                                                    }`}
+                                                />
                                             </a>
+                                            {revealedIndex === index && (
+                                                <p className="text-gray-700 text-sm leading-relaxed mt-2 border-t border-gray-100 pt-4">
+                                                    {service.description}
+                                                </p>
+                                            )}
                                         </div>
                                         <div className="col-start-1 md:row-start-1 aspect-video bg-pink-100 rounded-lg mb-4 flex items-center justify-center">
                                             <IconComponent className="w-12 h-12 text-pink-300" />
