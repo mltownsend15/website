@@ -48,6 +48,18 @@
   --color-emerald-300: #477e5e;
   --color-emerald-400: #2f6742;
   --color-emerald-500: #0a5133;
+
+  /* Custom Pink Color */
+  --color-pink-50: #FFF0EF;
+  --color-pink-100: #FFD0CC;
+  --color-pink-200: #EB9F9B;
+  --color-pink-300: #F4A7A3;
+  --color-pink-400: #ef7b75;
+  --color-pink-500: #985351;
+  --color-pink-600: #763433;
+  --color-pink-700: #400107;
+
+
 }
 
 :root {

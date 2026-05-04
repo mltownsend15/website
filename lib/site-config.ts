@@ -63,8 +63,9 @@ export const siteConfig = {
             title: "Psychiatric Assessment",
             subtitle: "Diagnostic Evaluation",
             info: "With or without Treatment Recommendations",
-            description:
+            descriptionShort:
                 "Comprehensive diagnostic evaluation to understand your mental health and find the best path for treatment.",
+            description: "A psychiatric assessment is an evaluation that explores content from many facets of someone’s life. It is holistic, meaning you will be seen as a whole person, not just the symptom of a complaint. This appt takes about an hour and will eventually result in one or multiple diagnoses. If requested, treatment recommendations can be identified for Primary Care or Pediatricians to consider when managing your care (For Medicaid clients).",
             duration: "1 hr",
             price: "300",
             type: "Virtual",
@@ -89,9 +90,10 @@ export const siteConfig = {
             subtitle:
                 "Youth centered psychiatric medication management and counseling",
             info: "With or without therapy",
-            description: "Youth-centered psychiatric medication management.",
+            descriptionShort: "Youth-centered psychiatric medication management.",
+            description: "Medication management is the term to describe working to optimize medications for one or multiple diagnoses. It is best to attempt one change at a time so that results can be fully attributed to that intervention. Townsend Medical Services is offering medication management to only privately insured people of WA at this time.",
             duration: "30 min",
-            price: "150",
+            price: "130 - 360",
             type: "Virtual",
             icon: "pill",
             detailedDescription: {
@@ -110,8 +112,9 @@ export const siteConfig = {
         {
             title: "COE Autism Evaluations and Recommendations",
             subtitle: "COE evaluation for autism spectrum disorder",
-            description:
+            descriptionShort:
                 "COE evaluation for autism spectrum disorder using specialized assessment tools and comprehensive evaluation.",
+            description: "Center of Excellence is a designation given by the Health Care Authority to promote more access points for autism evaluations for Applied Behavioral Analysis. One does not need to intend on applying to ABA to get an autism evaluation. This process will include a psychiatric assessment, autism specified evaluation using the Diagnostic and Statistical Manual of Mental Disorders (DSMV) criteria, an informant interview (I.e., Caregiver), an exam, recommendations, and rating scales that can provide eligibility information to Developmental Disabilities Administration (DDA). DDA offers support to people with certain disabilities. If the diagnosis of autism is not clear, a referral for an Autism Diagnostic Observation Schedule (ADOS) may be ordered. Autism is a spectrum disorder, and a level (1-3) will be identified in the process.",
             duration: "3 hr",
             price: "750",
             type: "Spokane",

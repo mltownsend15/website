@@ -3,6 +3,7 @@ import React from "react";
 
 interface InsuranceListProps {
     title?: string;
+    category_title?: string;
     className?: string;
     itemClassName?: string;
     highlightMolinaNote?: boolean; // keeps special wording for Molina
@@ -14,6 +15,7 @@ interface InsuranceListProps {
  */
 export function InsuranceList({
     title = "Accepted Insurances",
+    category_title = "Autism and Psychiatric Assessments Only",
     className = "bg-white rounded-lg p-8 shadow-sm",
     itemClassName = "p-3 bg-gray-50 rounded-lg",
     highlightMolinaNote = true,
@@ -42,8 +44,8 @@ export function InsuranceList({
                 })}
             </div>
             <div className="flex justify-center">
-                <h4 className="font-semibold text-gray-900 m-6 py-2 px-10 text-center bg-emerald-100 rounded-md">
-                    Autism and Psychiatric Assessments Only
+                <h4 className="font-semibold text-gray-100 m-6 py-2 px-10 text-center bg-emerald-100 rounded-md">
+                    {category_title}
                 </h4>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">

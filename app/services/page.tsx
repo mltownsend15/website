@@ -13,6 +13,7 @@ import {
     Pill,
     Puzzle,
     X,
+    ChevronDown,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -37,6 +38,14 @@ export default function ServicesPage() {
         document.body.style.overflow = "unset";
     };
 
+    const openMoreInfo = () => {
+
+    }
+
+    const closeMoreInfo = () => {
+        
+    }
+
     return (
         <div className="min-h-screen">
             <Navigation />
@@ -60,7 +69,7 @@ export default function ServicesPage() {
                                     className="hover:shadow-lg transition-shadow cursor-pointer"
                                 >
                                     <CardContent className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-3 grid-flow-col gap-8 p-6 relative">
-                                        <div className="md:col-span-2 grid">
+                                        <div className="md:col-span-2 flex flex-col gap-2">
                                             <div className="flex flex-col">
                                                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                                                     {service.title}
@@ -72,7 +81,7 @@ export default function ServicesPage() {
                                                 </div>
                                             </div>
                                             <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                                                {service.description}
+                                                {service.descriptionShort}
                                             </p>
                                             <div className="flex justify-center md:absolute top-0 right-6">
                                                 <div className="flex justify-between items-center text-sm text-gray-500 gap-2 mb-4">
@@ -90,12 +99,13 @@ export default function ServicesPage() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <Button
-                                                className="w-full bg-pink-300 hover:bg-pink-400 text-white"
+                                            <a
+                                                className="flex items-center w-full text-pink-300 hover:text-pink-400 font-bold gap-2"
                                                 onClick={() => openModal(index)}
                                             >
                                                 More Info
-                                            </Button>
+                                                <ChevronDown className="w-4 h-4" />
+                                            </a>
                                         </div>
                                         <div className="col-start-1 md:row-start-1 aspect-video bg-pink-100 rounded-lg mb-4 flex items-center justify-center">
                                             <IconComponent className="w-12 h-12 text-pink-300" />

@@ -68,7 +68,7 @@ export default function AboutPage() {
                                                 <Badge
                                                     key={index}
                                                     variant="secondary"
-                                                    className="bg-emerald-100 text-emerald-600"
+                                                    className="bg-emerald-100 text-gray-50"
                                                 >
                                                     {specialty}
                                                 </Badge>

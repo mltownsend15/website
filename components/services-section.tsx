@@ -46,7 +46,7 @@ export function ServicesSection() {
                                         </div>
                                     </div>
                                     <p className="row-span-4 text-gray-600 text-sm leading-relaxed text-center">
-                                        {service.description}
+                                        {service.descriptionShort}
                                     </p>
 
                                     <div className="row-start-14 row-span-4 flex justify-center items-center space-x-4 text-sm text-gray-600 bg-pink-50 rounded-sm">
