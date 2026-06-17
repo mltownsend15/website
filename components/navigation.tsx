@@ -63,12 +63,6 @@ export function Navigation() {
                             >
                                 Contact
                             </Link>
-                            <Link
-                                href="/how-to-apply"
-                                className="text-gray-900 hover:text-emerald-300 px-2 xl:px-3 py-2 text-sm font-medium whitespace-nowrap"
-                            >
-                                How to Apply
-                            </Link>
                         </div>
                     </div>
 
@@ -143,13 +137,6 @@ export function Navigation() {
                                 onClick={() => setIsOpen(false)}
                             >
                                 Contact
-                            </Link>
-                            <Link
-                                href="/how-to-apply"
-                                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-emerald-300 hover:bg-gray-50 rounded-md"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                How to Apply
                             </Link>
                             <div className="px-3 py-2">
                                 <Button

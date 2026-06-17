@@ -25,7 +25,7 @@ export function InsuranceList({
             <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
                 {title}
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-4 text-center">
                 {siteConfig.insurance.map((insurer, index) => {
                     const label = highlightMolinaNote
                         ? insurer.toLowerCase().startsWith("molina")
@@ -48,7 +48,7 @@ export function InsuranceList({
                     {category_title}
                 </h4>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 {siteConfig.add_insurance.map((insurer, index) => {
                     const label = insurer;
                     return (

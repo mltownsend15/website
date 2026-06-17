@@ -67,9 +67,13 @@ export const siteConfig = {
                 "Comprehensive diagnostic evaluation to understand your mental health and find the best path for treatment.",
             description: "A psychiatric assessment is an evaluation that explores content from many facets of someone’s life. It is holistic, meaning you will be seen as a whole person, not just the symptom of a complaint. This appt takes about an hour and will eventually result in one or multiple diagnoses. If requested, treatment recommendations can be identified for Primary Care or Pediatricians to consider when managing your care (For Medicaid clients).",
             duration: "1 hr",
-            price: "300",
+            price: "",
             type: "Virtual",
             icon: "brain",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20Psychiatric%20Assessment%20-nTJq5xV083OWqiOOgY6kjO3t8sFcIo.mp4",
+                title: "Psychiatric assessment overview video",
+            },
             detailedDescription: {
                 intro: "Understanding a Psychiatric Assessment: What It Means for You:",
                 content:
@@ -90,12 +94,16 @@ export const siteConfig = {
             subtitle:
                 "Youth centered psychiatric medication management and counseling",
             info: "With or without therapy",
-            descriptionShort: "Youth-centered psychiatric medication management.",
-            description: "Medication management is the term to describe working to optimize medications for one or multiple diagnoses. It is best to attempt one change at a time so that results can be fully attributed to that intervention. Townsend Medical Services is offering medication management to only privately insured people of WA at this time.",
+            descriptionShort: "Youth-centered psychiatric medication management",
+            description: "Medication management is the term to describe working to optimize medications for one or multiple diagnoses. It is best to attempt one change at a time so that results can be fully attributed to that intervention. Townsend Medical Services is offering medication management to only privately insured youth ages 5-25 currently living in WA.",
             duration: "30 min",
-            price: "130 - 360",
+            price: "",
             type: "Virtual",
             icon: "pill",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20Medication%20Management%20-rF1vnTIpufjczn4HHaMPqPNzzZExzL.mp4",
+                title: "Psychiatric medication management overview video",
+            },
             detailedDescription: {
                 intro: "What is Medication Management?",
                 content:
@@ -117,8 +125,12 @@ export const siteConfig = {
             description: "Center of Excellence is a designation given by the Health Care Authority to promote more access points for autism evaluations for Applied Behavioral Analysis. One does not need to intend on applying to ABA to get an autism evaluation. This process will include a psychiatric assessment, autism specified evaluation using the Diagnostic and Statistical Manual of Mental Disorders (DSMV) criteria, an informant interview (I.e., Caregiver), an exam, recommendations, and rating scales that can provide eligibility information to Developmental Disabilities Administration (DDA). DDA offers support to people with certain disabilities. If the diagnosis of autism is not clear, a referral for an Autism Diagnostic Observation Schedule (ADOS) may be ordered. Autism is a spectrum disorder, and a level (1-3) will be identified in the process.",
             duration: "3 hr",
             price: "750",
-            type: "Spokane",
+            type: "Virtual",
             icon: "puzzle",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20COE-NNOYMfdBbVx59MLGJeJZKbCc5anJxe.mp4",
+                title: "COE autism evaluations overview video",
+            },
             detailedDescription: {
                 intro: "Understanding the Center of Excellence Autism Evaluations at Townsend Medical Services",
                 content:
@@ -150,7 +162,6 @@ export const siteConfig = {
         "Employee Benefit Management Services Inc",
         "Premera Blue Cross",
         "Regence",
-        "United Healthcare",
         "United Medical Resources",
     ],
 
@@ -158,7 +169,8 @@ export const siteConfig = {
     add_insurance: [
         "Community Health Plan of WA",
         "Coordinated Care",
-        "Molina"
+        "Molina",
+        "United Healthcare",
     ],
 
     // Certifications

@@ -18,15 +18,6 @@ export function HeroSection() {
                         {siteConfig.tagline}
                     </h1>
 
-                    {/* Subtitle with better contrast */}
-                    <div className="bg-black/5 rounded-lg p-6 mb-8 backdrop-blur-sm shadow-xl">
-                        <p className="text-xl md:text-2xl text-white font-medium leading-relaxed">
-                            Psychiatric care for youth ages{" "}
-                            {siteConfig.eligibility.ageRange} specializing in
-                            autism, ADHD, anxiety, and mood disorders
-                        </p>
-                    </div>
-
                     {/* Call-to-action buttons */}
                     <div className="flex justify-center items-center">
                         <Button
