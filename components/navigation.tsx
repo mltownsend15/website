@@ -63,12 +63,6 @@ export function Navigation() {
                             >
                                 Contact
                             </Link>
-                            <Link
-                                href="/how-to-apply"
-                                className="text-gray-900 hover:text-emerald-300 px-2 xl:px-3 py-2 text-sm font-medium whitespace-nowrap"
-                            >
-                                How to Apply
-                            </Link>
                         </div>
                     </div>
 
@@ -83,7 +77,7 @@ export function Navigation() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Apply Here
+                                Get Started
                             </a>
                         </Button>
                     </div>
@@ -144,13 +138,6 @@ export function Navigation() {
                             >
                                 Contact
                             </Link>
-                            <Link
-                                href="/how-to-apply"
-                                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-emerald-300 hover:bg-gray-50 rounded-md"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                How to Apply
-                            </Link>
                             <div className="px-3 py-2">
                                 <Button
                                     className="w-full bg-emerald-300 hover:bg-emerald-400 text-white"
@@ -161,7 +148,7 @@ export function Navigation() {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        Apply Here
+                                        Get Started
                                     </a>
                                 </Button>
                             </div>

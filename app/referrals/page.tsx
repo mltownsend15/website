@@ -1,15 +1,9 @@
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
-import { siteConfig } from "@/lib/site-config";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { InsuranceList } from "@/components/insurance-list";
 
 export default function ReferralsPage() {
-    // Placeholder values to be filled in later
-    const WA_LICENSE_NUMBER = siteConfig.contact.licenseNumber; // Replace with actual license number
-    const FAX_NUMBER = siteConfig.contact.fax; // Uses existing fax if present
-
     return (
         <div className="min-h-screen">
             <Navigation />
@@ -33,7 +27,7 @@ export default function ReferralsPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Apply Here
+                            Get Started
                         </a>
                     </Button>
                 </div>
@@ -42,29 +36,12 @@ export default function ReferralsPage() {
             {/* Content Section */}
             <div className="py-16 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-                    {/* License & Fax */}
-                    <Card>
-                        <CardHeader>
-                            <CardTitle className="text-2xl">
-                                Provider Information
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent className="space-y-4 text-gray-600">
-                            <p>
-                                <span className="font-semibold text-gray-900">
-                                    WA License:
-                                </span>{" "}
-                                <span>{WA_LICENSE_NUMBER}</span>
-                            </p>
-                            <p>
-                                <span className="font-semibold text-gray-900">
-                                    Fax:
-                                </span>{" "}
-                                <span>{FAX_NUMBER}</span>
-                            </p>
-                        </CardContent>
-                    </Card>
-
+                    <div className="width-full flex justify-center">
+                        <div className="max-w-[70ch] flex flex-col gap-6 text-pretty">
+                            <p>If you are referring a patient for services, please direct them to complete the <b>“Get Started”</b> form on our website. They will be offered a complimentary consultation call prior to scheduling. Any relevant collateral information is welcome and may be faxed to <b>509-606-1514</b>.</p>
+                            <p>If you are seeking services for yourself, please complete the <b>“Get Started”</b> form as well. If you prefer to discuss options before completing intake paperwork, you are welcome to call <a href="tel:5096060708" className="font-semibold text-emerald-500">509-606-0708</a> to speak with Miranda Townsend.</p>
+                        </div>
+                    </div>
                     {/* Insurance Section (Reusable) */}
                     <InsuranceList title="Accepted Insurances" />
                 </div>

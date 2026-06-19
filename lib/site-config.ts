@@ -1,9 +1,9 @@
 export const siteConfig = {
     name: "Townsend Medical Services",
     tagline:
-        "Inclusive, compassionate, and professional care prioritized through your mental health treatment.",
+        "Elevating the Mental Health of People in WA through Inclusive Virtual Psychiatric Care",
     description:
-        "Virtual psychiatric care founded by Miranda Townsend, a psychiatric nurse practitioner with a decade of experience in Washington State",
+        "Psychiatric care founded by Miranda Townsend, a psychiatric nurse practitioner with a decade of experience in Washington State",
 
     // Color Palette - Emerald Forest Theme
     colors: {
@@ -25,13 +25,16 @@ export const siteConfig = {
         address: "25 West Main C1",
         city: "Spokane, WA 99201",
         hours: [
-            "Tuesday: 8 AM - 11 AM",
+            "Monday: 8 AM - 4 PM",
+            "Tuesday: 8 AM - 4 PM",
             "Wednesday: 8 AM - 4 PM",
             "Thursday: 8 AM - 4 PM",
+            "Friday: 8 AM - 4 PM",
         ],
         note: "Virtual appointments only",
         bookingNote: "Please see texting policy for booking",
         licenseNumber: "AP60494711",
+        npi: "1568851509"
     },
 
     // Practitioner Information
@@ -39,15 +42,12 @@ export const siteConfig = {
         name: "Miranda Townsend",
         title: "Psychiatric Nurse Practitioner",
         credentials: "MN, ARNP, PMHNP-BC",
-        bio: "Meet Miranda, a Spokane native with a passion for treating children, adolescents, and young adults with mental health challenges. Miranda earned her Master's degree from Washington State University. She combines her professional expertise with her love of creativity through drawing, painting, and sewing. Miranda shares her home with her husband and their three cavapoos, who resemble teddy bears. Married and rooted in Spokane, she embraces both her personal and professional life with dedication.",
+        bio: "Miranda Townsend, MN, ARNP, PMHNP-BC graduated with her Master’s degree as an ARNP in 2014 from Washington State University. She has over a decade of experience working with people across the life span, Medicaid systems, and developing and supporting mental health programs both residentially and in outpatient settings. She is a compassionate inclusive provider and highlights the strengths of the people she works with.",
         specialties: [
             "Autism Spectrum Disorders",
-            "Post-Traumatic Stress Disorder (PTSD)",
             "Anxiety Disorders",
-            "Obsessive Compulsive Disorder (OCD)",
-            "Mood Disorders - Bipolar and Depression",
-            "Attention-Deficit/Hyperactivity Disorder (ADHD)",
-            "LGBTQIA+ community support",
+            "Mood Disorders",
+            "Attention-Deficit/Hyperactivity Disorder (ADHD)"
         ],
         approach:
             "The power of resilience and the potential for growth is seen in every individual. Ideal clients are those who are willing to explore their experiences and symptoms from a biopsychosocial developmental perspective. Together, we'll aim to uncover the understanding of your challenges and work toward effective, personalized solutions.",
@@ -62,12 +62,18 @@ export const siteConfig = {
         {
             title: "Psychiatric Assessment",
             subtitle: "Diagnostic Evaluation",
-            description:
+            info: "With or without Treatment Recommendations",
+            descriptionShort:
                 "Comprehensive diagnostic evaluation to understand your mental health and find the best path for treatment.",
+            description: "A psychiatric assessment is an evaluation that explores content from many facets of someone’s life. It is holistic, meaning you will be seen as a whole person, not just the symptom of a complaint. This appt takes about an hour and will eventually result in one or multiple diagnoses. If requested, treatment recommendations can be identified for Primary Care or Pediatricians to consider when managing your care (For Medicaid clients).",
             duration: "1 hr",
-            price: "300",
+            price: "",
             type: "Virtual",
             icon: "brain",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20Psychiatric%20Assessment%20-nTJq5xV083OWqiOOgY6kjO3t8sFcIo.mp4",
+                title: "Psychiatric assessment overview video",
+            },
             detailedDescription: {
                 intro: "Understanding a Psychiatric Assessment: What It Means for You:",
                 content:
@@ -84,14 +90,20 @@ export const siteConfig = {
             },
         },
         {
-            title: "Medication Management with Counseling",
+            title: "Psychiatric Medication Management",
             subtitle:
                 "Youth centered psychiatric medication management and counseling",
-            description: "Youth-centered psychiatric medication management.",
+            info: "With or without therapy",
+            descriptionShort: "Youth-centered psychiatric medication management",
+            description: "Medication management is the term to describe working to optimize medications for one or multiple diagnoses. It is best to attempt one change at a time so that results can be fully attributed to that intervention. Townsend Medical Services is offering medication management to only privately insured youth ages 5-25 currently living in WA.",
             duration: "30 min",
-            price: "150",
+            price: "",
             type: "Virtual",
             icon: "pill",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20Medication%20Management%20-rF1vnTIpufjczn4HHaMPqPNzzZExzL.mp4",
+                title: "Psychiatric medication management overview video",
+            },
             detailedDescription: {
                 intro: "What is Medication Management?",
                 content:
@@ -106,14 +118,19 @@ export const siteConfig = {
             },
         },
         {
-            title: "Autism Evaluation",
+            title: "COE Autism Evaluations and Recommendations",
             subtitle: "COE evaluation for autism spectrum disorder",
-            description:
+            descriptionShort:
                 "COE evaluation for autism spectrum disorder using specialized assessment tools and comprehensive evaluation.",
+            description: "Center of Excellence is a designation given by the Health Care Authority to promote more access points for autism evaluations for Applied Behavioral Analysis. One does not need to intend on applying to ABA to get an autism evaluation. This process will include a psychiatric assessment, autism specified evaluation using the Diagnostic and Statistical Manual of Mental Disorders (DSMV) criteria, an informant interview (I.e., Caregiver), an exam, recommendations, and rating scales that can provide eligibility information to Developmental Disabilities Administration (DDA). DDA offers support to people with certain disabilities. If the diagnosis of autism is not clear, a referral for an Autism Diagnostic Observation Schedule (ADOS) may be ordered. Autism is a spectrum disorder, and a level (1-3) will be identified in the process.",
             duration: "3 hr",
             price: "750",
-            type: "Spokane",
+            type: "Virtual",
             icon: "puzzle",
+            video: {
+                src: "https://ewgh8tja1jmkmw44.public.blob.vercel-storage.com/video/TMS%20COE-NNOYMfdBbVx59MLGJeJZKbCc5anJxe.mp4",
+                title: "COE autism evaluations overview video",
+            },
             detailedDescription: {
                 intro: "Understanding the Center of Excellence Autism Evaluations at Townsend Medical Services",
                 content:
@@ -138,17 +155,22 @@ export const siteConfig = {
 
     // Insurance
     insurance: [
-        "BlueShield of Washington",
-        "Oxford",
-        "Ambetter Washington",
-        "United Healthcare",
-        "Cigna",
-        "Premera Blue Cross",
-        "Oscar Health",
-        "Blue Cross Blue Shield of Massachusetts",
         "Aetna",
+        "Ambetter Washington",
         "Assuris",
+        "BlueShield of Washington",
+        "Employee Benefit Management Services Inc",
+        "Premera Blue Cross",
+        "Regence",
+        "United Medical Resources",
+    ],
+
+    //ADD Insurance
+    add_insurance: [
+        "Community Health Plan of WA",
+        "Coordinated Care",
         "Molina",
+        "United Healthcare",
     ],
 
     // Certifications

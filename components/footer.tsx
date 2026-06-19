@@ -28,12 +28,20 @@ export function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Apply Here
+                                Get Started
                             </a>
                         </Button>
-                        <p className="text-sm text-gray-500">
-                            © 2024 {siteConfig.name}. All rights reserved.
-                        </p>
+                        <div className="grid gap-2">
+                            <p className="text-sm text-gray-500">
+                                NPI: {siteConfig.contact.npi}
+                            </p>
+                            <p className="text-sm text-gray-500">
+                                License: {siteConfig.contact.licenseNumber}
+                            </p>
+                            <p className="text-sm text-gray-500">
+                                © 2026 {siteConfig.name}. All rights reserved.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

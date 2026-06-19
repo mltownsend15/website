@@ -23,19 +23,19 @@ export default function AboutPage() {
                     </div>
 
                     <Card className="overflow-hidden mb-12">
-                        <CardContent className="p-0">
-                            <div className="md:flex">
-                                <div className="md:w-1/3 bg-gradient-to-br from-emerald-300 to-emerald-400 p-8 text-white">
-                                    <div className="text-center">
-                                        <div className="w-32 h-32 bg-white rounded-full mx-auto mb-6 overflow-hidden">
+                        <CardContent className="p-4">
+                            <div className="grid md:grid-cols-3">
+                                <div className="md:col-span-1 bg-gradient-to-br from-emerald-300 to-emerald-400 p-8 text-white rounded-md overflow-hidden">
+                                    <div className="flex flex-col text-center">
+                                        <article className="aspect-square w-64 bg-white rounded mx-auto mb-6 overflow-hidden">
                                             <Image
                                                 src="/mirandaBiographyPicture.jpg"
                                                 alt="Miranda Townsend, Psychiatric Nurse Practitioner"
-                                                width={128}
-                                                height={128}
+                                                width={256}
+                                                height={256}
                                                 className="w-full h-full object-cover object-top"
                                             />
-                                        </div>
+                                        </article>
                                         <h2 className="text-2xl font-bold mb-2">
                                             {siteConfig.practitioner.name}
                                         </h2>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                                     </div>
                                 </div>
 
-                                <div className="md:w-2/3 p-8">
+                                <div className="md:col-span-2 p-8">
                                     <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                                         Biography
                                     </h3>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                                                 <Badge
                                                     key={index}
                                                     variant="secondary"
-                                                    className="bg-emerald-100 text-emerald-400"
+                                                    className="bg-emerald-100 text-gray-50"
                                                 >
                                                     {specialty}
                                                 </Badge>
@@ -114,15 +114,6 @@ export default function AboutPage() {
                                 </p>
                             </CardContent>
                         </Card>
-                    </div>
-
-                    {/* Mission Section */}
-                    <div className="text-center bg-gradient-to-r from-emerald-300 to-emerald-400 rounded-2xl p-12 text-white">
-                        <h3 className="text-3xl font-bold mb-4">Mission</h3>
-                        <p className="text-xl opacity-90">
-                            Elevating the mental health of youth through
-                            inclusive psychiatric services.
-                        </p>
                     </div>
                 </div>
             </div>
